@@ -1,0 +1,30 @@
+{
+  "name": "whatsapp-browser-extension",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:chrome": "pnpm run build && cp manifest/manifest.chrome.json dist/manifest.json",
+    "build:firefox": "pnpm run build && cp manifest/manifest.firefox.json dist/manifest.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "start:firefox": "pnpm run build:firefox && web-ext run -s dist -f firefox-desktop"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.40",
+    "@types/webextension-polyfill": "^0.12.5",
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
+    "eslint": "^10.2.1",
+    "prettier": "^3.8.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.10",
+    "web-ext": "^10.1.0"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.12.0"
+  }
+}

@@ -1,0 +1,49 @@
+:root {
+  color: #111827;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb;
+}
+
+body {
+  margin: 0;
+}
+
+.popup {
+  width: 320px;
+  min-height: 240px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: grid;
+  gap: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 18px;
+}
+
+#status {
+  margin: 0;
+  font-size: 14px;
+}
+
+#check-button {
+  border: 1px solid #1d4ed8;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+#output {
+  margin: 0;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
