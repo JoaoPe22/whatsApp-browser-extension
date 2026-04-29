@@ -27,7 +27,29 @@ h1 {
   font-size: 14px;
 }
 
-#check-button {
+.field {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 14px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#save-button {
   border: 1px solid #1d4ed8;
   background: #2563eb;
   color: #fff;

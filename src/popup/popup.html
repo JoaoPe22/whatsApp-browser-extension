@@ -9,8 +9,16 @@
   <body>
     <main class="popup">
       <h1>WhatsApp Helper</h1>
-      <p id="status">Ready to check the connection.</p>
-      <button id="check-button" type="button">Test connection</button>
+      <p id="status">Ready.</p>
+      <label class="field">
+        <span>Your name</span>
+        <input id="display-name" type="text" placeholder="Ex: Maria" />
+      </label>
+      <label class="toggle">
+        <input id="enabled-toggle" type="checkbox" />
+        <span>Enable prefix</span>
+      </label>
+      <button id="save-button" type="button">Save name</button>
       <pre id="output">No data yet.</pre>
     </main>
     <script type="module" src="./popup.ts"></script>

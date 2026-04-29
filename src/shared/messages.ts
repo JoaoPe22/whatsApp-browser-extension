@@ -8,6 +8,24 @@ type ExtensionMessage =
     }
   | {
       type: "POPUP_PING";
+    }
+  | {
+      type: "SET_DISPLAY_NAME";
+      payload: {
+        name: string;
+      };
+    }
+  | {
+      type: "GET_DISPLAY_NAME";
+    }
+  | {
+      type: "SET_ENABLED";
+      payload: {
+        enabled: boolean;
+      };
+    }
+  | {
+      type: "GET_ENABLED";
     };
 
 type ExtensionMessageResponse = {
